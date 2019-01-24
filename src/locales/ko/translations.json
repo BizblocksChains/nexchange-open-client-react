@@ -2,39 +2,43 @@
   "generalterms": {
     "formsucess": "Your form has been successfully submitted. We'll get back to you shortly!",
     "formfailed": "Something went wrong during the form submission, please try again later.",
-    "email": "Email",
-    "address": "address",
-    "youraddress": "Enter your {{selectedCoin}} wallet address",
-    "search": "Search",
-    "submit": "Submit"
+    "email": "Email (required to notify you about your order)",
+    "address": "주소",
+    "youraddress": "{{selectedCoin}} 를 인출 받을 암호화폐의  지갑 주소를 입력하시오.",
+    "search": "검색",
+    "submit": "승인"
   },
   "header": {
-    "about": "About",
+    "about": "서비스 소개",
     "faq": "FAQ",
     "ico": "ICO PAGE",
     "apidocs": "API Docs",
-    "compare": "Compare Rates",
-    "support": "Support",
+    "compare": "화폐 비교",
+    "support": "지원 사항",
     "twitter": "Follow us on Twitter!",
     "facebook": "Like us on Facebook",
     "slack": "Join us on Slack",
     "telegram": "Join us on Telegram",
-    "en": "English",
-    "de": "German"
+    "ko": "한국",
+    "en": "미국",
+    "de": "독일",
+    "ru": "러시아"
   },
   "hero": {
-    "1": "암호화폐 교환 시스템",
+    "1": "암호화폐 교환 서비스",
     "2": "<0>간편하다. <1>안전하다</1>. 투명하다.</0>"
   },
   "exchangewidget": {
-    "1": "GET STARTED",
-    "2": "*Confirm & Place Order",
-    "3": "Current fee is 0.5%"
+    "1": "시작하기",
+    "2": "* 주문 및 확인",
+    "3": "현재 수수료는 0.5% 입니다.",
+    "min": "최소 주문 액수",
+    "max": "최대 주문 액수"
   },
   "recentorders": {
-    "1": "Recent Orders",
-    "2": "Click to view on API",
-    "3": "View on API"
+    "1": "최근 주문 내역",
+    "2": "주문 상세 정보 선택",
+    "3": "주문 상세 정보"
   },
   "testimonials": {
     "1": "Testimonials",
@@ -50,18 +54,15 @@
     "2": "Best rate"
   },
   "about": {
-    "title": "About Us",
+    "title": "서비스 소개",
     "teamtitle": "The People Who Make it Happen",
-    "1": "Nexchange is a fast, reliable and fully transparent cryptocurrency exchange built by crypto enthusiasts, for crypto enthusiasts.",
-    "2": "We are a group of multi-national, multi-disciplinary cryptocurrency professionals.",
-    "3":
-      "Our team came together to make this platform after seeing firsthand the need for a fast and reliable exchange on the crypto market.",
-    "4": "We pride ourselves on total transparency",
-    "5": "Everything is viewable through our API, starting from order lists and ending with our coin reserves.",
-    "6":
-      "N.exchange is built on several core values that guide our team in our day to day operations. Among them are complete transparency, a strive to help make cryptocurrency as accessible as possible, and a passion for open source.",
-    "7":
-      "<0>To support our mission of making crypto accessible to everyone, we’ve made our <2><0>front end client completely open source <1></1></0></2>.</0>",
+    "1": "Nexchange 는 암호화폐 사용자를 위한 빠르고, 신뢰할 수 있는 투명한 암호화폐 교환 서비스 입니다.",
+    "2": "우리는 다국적이며, 다양한 직업 분야를 가진 암호화폐 전문가 그룹입니다.",
+    "3": "우리 그룹은 암호화폐 시장에서 빠르고, 안정적인 교환 서비스의 필요성을 직접 목격한 이후, 이 플랫폼을 만들기 위해 모였습니다.",
+    "4": "우리는 완전한 투명성을 가진 서비스에 자부심을 느낍니다. ",
+    "5": "주문 내역에서 우리가 동전(암호화폐)을 보유하면서 부터 교환을 마무리할 때까지 모든 것을 API를 통해 볼 수 있습니다.",
+    "6": "N.exchange 는 우리 그룹이 가지는 몇 가지 핵심 가치를 기반으로 합니다. 완벽한 투명성, 교환 가능한 (많은) 암호화폐를 서비스로 제공하기 위한 노력, 오픈 소스에 대한 열정입니다.",
+    "7": "<0>모든 사람들에게 (암호화폐 교환) 서비스를 지원하기 위해, 우리는 <2><0> front end client completely open source <1></1></0></2>로 제공 한다.</0>",
     "oleg":
       "Multidisciplinary coder. Aspiring innovator with a deep passion for open source and making the world better, step by step, every single day.",
     "sarunas": "Backend developer and physicist. Animation fan, cryptocurrencies enthusiast and plays the saxophone.",
@@ -238,17 +239,17 @@
     "success1": "Order success",
     "success2": "Make another order!",
     "pay": "Pay",
-    "deposit": "Deposit",
-    "receive": "Receive",
-    "Deposit": "Deposit",
-    "Receive": "Receive",
+    "deposit": "예탁",
+    "receive": "인출",
+    "Deposit": "예탁",
+    "Receive": "인출",
     "qr": "Deposit QR code",
     "details": "See your order details on our API",
     "complete": "Complete",
     "rates": "Rates at order creation",
     "fee": "Withdrawal fee",
-    "feeinfo": "The indicated price is final, all fees are included.",
-    "byclickTC": "*By clicking <b>{{buttonName}}</b> you agree to our Terms and Conditions (<a href='/terms-and-conditions'>T&C</a>)",
+    "feeinfo": "표시된 가격은 인출 시, 적용될 가격이며 모든 비용이 포함되어 있습니다.",
+    "byclickTC": "<b>{{buttonName}}</b> 을 클릭 시, 귀하는 이용 약관에 동의합니다.",
     "iAgreedTC": "I have read and agree to the <a href='/terms-and-conditions' target='_blank'>Terms and Conditions</a> and <a href='/privacy' target='_blank'>Privacy Policy</a>.",
     "iAcknowledgeKYC": "I acknowledge that I have to upload my Identity Document after the payment.",
     "tooltipTC": "You must agree with T&C and Privacy Policy.",
@@ -262,9 +263,9 @@
       "tier": {
         "limit": "Tier limits reached, additional verification needed",
         "explanation":
-          "This is a one-time process, once verified you’ll be able to complete future purchases instantly until current verification tier limits are reached.",
+          "This is a one-time process. Once you are verified you will be able to complete future purchases instantly until current verification tier limits are reached.",
         "explanation2":
-          "This is a one-time process, once verified you’ll be able to complete future purchases for this withdrawal address instantly.",
+          "This is a one-time process. Once you are verified you will be able to complete future withdrawals to the whitelisted address instantly.",
         "selfie": "Selfie",
         "selfieexplanation":
           "i.e. you have to make a selfie of yourself with a provided credit card in your hands, identity card, plus a paper with today's date and 'N.EXCHANGE'. You may hide middle digits of the credit card.",
@@ -298,7 +299,7 @@
       },
       "kyc": {
         "1": "Selfie with government issued ID",
-        "govSelfieDesc": "Please make a selfie (self portrait) with an ID in English (identity card, passport or drivers license) with a note that contains today's date and 'n.exchange' written beside it. This is required according to KYC AML/AFT regulations. This also helps us defeat fraud and protect our customers. ",
+        "govSelfieDesc": "Please upload a picture of yourself, a picture of your ID in English (the ID can be an identity card, passport or drivers license), and a note that contains today’s date and ‘n.exchange’ written next to it. This is required according to KYC AML/AFT regulations. This also helps us to fight fraud and to protect our customers.",
         "11": "e.g. color scanned passport, driving license, ID card. Shows date of birth, has expiration date.",
         "2": "Proof of residence",
         "21":
@@ -336,7 +337,7 @@
     "alt": "Get notified",
     "kycupdate": "KYC status updated for order",
     "email": "Enter your e-mail address",
-    "explanation": "If you would like to be notified about your order please enter your e-mail address below."
+    "explanation": "Add your email to join our referral program & get notified about the status of your transactions"
   },
   "referral": {
     "1": "Share this unique referral link with your friends to earn some coins!",
