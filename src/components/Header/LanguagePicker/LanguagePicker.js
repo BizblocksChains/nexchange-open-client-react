@@ -1,0 +1,55 @@
+import React, { Component } from 'react';
+import { I18n } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
+import styles from './LanguagePicker.scss';
+
+class LanguagePicker extends Component {
+  supportedLanguages = ['ko', 'en'];
+
+  array_move(arr, old_index, new_index) {
+    if (new_index >= arr.length) {
+      let k = new_index - arr.length + 1;
+      while (k--) {
+        arr.push(undefined);
+      }
+    }
+
+    arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
+    return arr;
+  }
+
+  sortedSupportedLanguages() {
+    const selectedLanguage = I18n.language || window.localStorage.i18nextLng;
+    const selectedLngPosition = this.supportedLanguages.indexOf(selectedLanguage);
+
+    return this.array_move(this.supportedLanguages, selectedLngPosition, 0);
+  }
+
+  render = () => {
+    const languages = this.sortedSupportedLanguages();
+
+    console.log(languages);
+
+    return (
+      <ul className={styles.languagepicker}>
+        {languages.map(lng => (
+          <I18n ns="translations" key={lng}>
+            {(t, { i18n }) => (
+              <li key={lng}>
+              <Link to={`/?lang=${lng.toUpperCase()}`}  replace={false}>
+                <span href={`?lang=${lng}`} className="selected" onClick={() => i18n.changeLanguage(`${lng}`)}>
+                  <img className="flag" src={`/img/flags/${lng.toUpperCase()}.svg`} alt={t(`header.${lng}`)} />
+                  <span className="visible-xs-inline visible-ms-inline visible-lg-inline">{t(`header.${lng}`)}</span>
+                </span>
+              </Link>
+              </li>
+            )}
+          </I18n>
+        ))}
+      </ul>
+    );
+  };
+}
+
+export default LanguagePicker;

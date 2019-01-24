@@ -1,0 +1,172 @@
+body,
+html {
+  height: 100%;
+  background: #fafafa;
+}
+
+#root {
+  position: relative;
+  min-height: 100%;
+
+  @media (min-width: $screen-sm-min) {
+    padding-bottom: 114px;
+  }
+}
+
+body {
+  color: $blue;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: not-allowed;
+}
+
+p,
+a {
+  word-wrap: break-word;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 34px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 46px;
+  }
+}
+
+h2 {
+  font-size: 26px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 34px;
+  }
+}
+
+a {
+  color: $green;
+  &:visited,
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn {
+  font-family: 'Clan Offc Pro Medium';
+}
+
+.error {
+  color: $red !important;
+}
+
+.success {
+  color: $green !important;
+}
+
+.header-text {
+  font-size: 36px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.modal {
+  z-index: 9999;
+}
+
+.modal-title {
+  margin-top: -10px;
+  font-size: 30px;
+}
+
+.modal-body {
+  h3 {
+    margin-top: 35px;
+  }
+  h3:first-child {
+    margin-top: -8px;
+  }
+}
+
+textarea.form-control:focus {
+  outline: none;
+  border-color: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.box {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  background: #fff;
+
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 30px;
+  }
+}
+
+.text-green {
+  color: $green !important;
+}
+
+input {
+  border: none;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']:hover::-webkit-inner-spin-button,
+input[type='number']:hover::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='file'] {
+  margin: 10px 0 15px;
+}
+
+.form-group {
+  position: relative;
+  margin: 0;
+}
+
+.tooltip-inner {
+  white-space: pre-wrap;
+}
+
+.sticky-inner-wrapper {
+  z-index: 9999;
+}
+
+.title {
+  margin: 60px 0;
+  font-size: 25px;
+  color: $black;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: $screen-xs-min) {
+}
+@media (min-width: $screen-ms-min) {
+}
+@media (min-width: $screen-sm-min) {
+}
+@media (min-width: $screen-md-min) {
+}
+@media (min-width: $screen-lg-min) {
+}

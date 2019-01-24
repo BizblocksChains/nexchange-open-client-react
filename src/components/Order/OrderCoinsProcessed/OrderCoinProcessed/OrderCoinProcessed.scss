@@ -1,0 +1,119 @@
+.box.box {
+  padding: 22px 0 18px 10px;
+  overflow: hidden;
+
+  &.crypto {
+    padding: 10px 0 7px 10px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding: 18px 0 11px 30px;
+
+    &.crypto {
+      padding: 9px 0 8px 30px;
+    }
+  }
+}
+
+.box h5,
+.box h6 {
+  margin: 0;
+  text-transform: none;
+  color: $black;
+}
+
+.box h5 {
+  font-size: 16px;
+
+  @media (min-width: $screen-ms-min) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    margin-top: 4px;
+  }
+}
+
+.box h6 {
+  font-size: 12px;
+}
+
+:global .order-fiat .box.fiat h5 {
+  margin: 7px 0;
+
+  @media (min-width: $screen-lg-min) {
+    margin: 13px 0;
+  }
+}
+
+.tooltip {
+  text-align: left;
+}
+
+.media-left.media-left {
+  padding-right: 10px;
+  float: left;
+  width: 50px;
+  text-align: center;
+
+  @media (min-width: $screen-lg-min) {
+    padding-right: 30px;
+    width: 70px;
+  }
+}
+
+.media-right.media-right {
+  padding-right: 10px;
+  float: left;
+  width: calc(100% - 50px);
+
+  @media (min-width: $screen-lg-min) {
+    padding-right: 15px;
+    width: calc(100% - 70px);
+  }
+}
+
+.address {
+  float: left;
+  overflow-y: auto;
+  max-width: calc(100% - 30px);
+  margin-right: 10px;
+}
+
+.copy {
+  position: relative;
+  top: -2px;
+  color: $gray;
+  cursor: pointer;
+}
+
+.coin {
+  position: relative;
+  top: -2px;
+  font-size: 30px;
+
+  @media (min-width: $screen-lg-min) {
+    top: -4px;
+    font-size: 40px;
+  }
+}
+
+.box.crypto .coin {
+  top: 10px;
+
+  @media (min-width: $screen-lg-min) {
+    top: 6px;
+  }
+}
+
+.col-sm-6.col-sm-6 {
+  @media (min-width: $screen-md-min) {
+    width: 46%;
+  }
+}
+
+.pull-right-md.pull-right-md {
+  @media (min-width: $screen-md-min) {
+    float: right;
+  }
+}
